@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  min-height: 100vh; }
+
+::selection {
+  background-color: #a40a3c;
+  color: #fbfbfb; }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif; }
+
+li {
+  padding-top: 0.8rem; }
+
+/* input box */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+select {
+  display: inline-block;
+  border: 0.1rem solid #140107;
+  border-radius: 0.4rem; }
+
+/* summary */
+.tasks-list {
+  padding-left: 3rem;
+  text-align: left;
+  list-style-position: inside;
+  padding-bottom: 4.2rem; }
+  .tasks-list-gap {
+    padding: 0.6rem; }

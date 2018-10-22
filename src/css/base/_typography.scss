@@ -1,0 +1,30 @@
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+li {
+  padding-top: 0.8rem;
+}
+
+/* input box */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+select {
+  display: inline-block;
+  border: 0.1rem solid $color-tertiary-dark;
+  border-radius: 0.4rem;
+}
+
+/* summary */
+.tasks-list {
+  padding-left: 3rem;
+  text-align: left;
+  list-style-position: inside;
+  padding-bottom: 4.2rem;
+  &-gap {
+    padding: 0.6rem;
+  }
+}
+
