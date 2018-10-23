@@ -1,12 +1,12 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const FeatureGrid = ({ gridItems }) => (
-  <div className="columns is-multiline">
+  <div>
     {gridItems.map(item => (
-      <div key={item.image} className="column is-6">
-        <section className="section">
-          <p className="has-text-centered">
+      <div key={item.image}>
+        <section>
+          <p>
             <img alt="" src={item.image} />
           </p>
           <p>{item.text}</p>
@@ -14,7 +14,7 @@ const FeatureGrid = ({ gridItems }) => (
       </div>
     ))}
   </div>
-)
+);
 
 FeatureGrid.propTypes = {
   gridItems: PropTypes.arrayOf(
@@ -23,6 +23,6 @@ FeatureGrid.propTypes = {
       text: PropTypes.string,
     })
   ),
-}
+};
 
-export default FeatureGrid
+export default FeatureGrid;

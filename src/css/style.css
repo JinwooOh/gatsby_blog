@@ -46,3 +46,8 @@ select {
   padding-bottom: 4.2rem; }
   .tasks-list-gap {
     padding: 0.6rem; }
+
+.main-wrapper {
+  max-width: 110rem;
+  margin: auto;
+  padding: 2rem 10rem; }
