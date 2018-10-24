@@ -16,18 +16,16 @@ export default class IndexPage extends React.Component {
               <h1>Latest Posts</h1>
             </div>
 
-            {posts.map(({ node: post }) => (
-              <div key={post.id} className="post__thumbnail">
-                <h3>{post.frontmatter.title}</h3>
-                <small> on {post.frontmatter.date}</small>
-                <p>
-                  {post.excerpt}
-                  <br />
-                  <br />
-                  <Link to={post.fields.slug}>Keep Reading →</Link>
-                </p>
-              </div>
-            ))}
+            <div className="post">
+              {posts.map(({ node: post }) => (
+                <Link to={post.fields.slug}>
+                  <div key={post.id} className="post__card">
+                    <h3>{post.frontmatter.title}</h3>
+                    <small> on {post.frontmatter.date}</small>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
         </section>
       </Layout>

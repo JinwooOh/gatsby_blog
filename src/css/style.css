@@ -18,10 +18,19 @@ html {
       font-size: 75%; } }
 
 body {
+  margin-top: 10rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.6;
   box-sizing: border-box; }
+
+a {
+  color: #f4f4f4;
+  text-decoration: none; }
+  a:hover {
+    color: #927766;
+    text-decoration: none;
+    cursor: pointer; }
 
 body {
   font-size: 1.6rem;
@@ -49,6 +58,33 @@ select {
   .tasks-list-gap {
     padding: 0.6rem; }
 
+.post {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 3rem; }
+  .post__card {
+    flex: 0 1 28rem;
+    padding: 2rem;
+    margin: 1.4rem;
+    min-height: 30rem;
+    min-width: 30rem;
+    background-color: #304052;
+    color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    transition: all 0.3s;
+    position: relative; }
+    @media only screen and (max-width: 37.5em) {
+      .post__card {
+        min-height: 27rem;
+        margin-left: 1.2rem;
+        margin-right: 1.2rem;
+        flex: 1 1 28rem; } }
+    .post__card:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+
 .main-wrapper {
   max-width: 110rem;
   margin: auto;
@@ -70,13 +106,6 @@ select {
   position: fixed;
   top: 0;
   width: 100%; }
-  .nav a {
-    color: #f4f4f4;
-    text-decoration: none; }
-    .nav a:hover {
-      color: #927766;
-      text-decoration: none;
-      cursor: pointer; }
 
 .post__wrapper {
   padding: 1rem 10rem; }
