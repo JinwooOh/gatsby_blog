@@ -11,12 +11,13 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <section>
-          <div>
+          <div className="post__wrapper">
             <div>
               <h1>Latest Posts</h1>
             </div>
+
             {posts.map(({ node: post }) => (
-              <div key={post.id}>
+              <div key={post.id} className="post__thumbnail">
                 <h3>{post.frontmatter.title}</h3>
                 <small> on {post.frontmatter.date}</small>
                 <p>

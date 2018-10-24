@@ -2,4 +2,41 @@
   max-width: 110rem;
   margin: auto;
   padding: 2rem 10rem;
+  background-color: $color-white-bg;
+}
+
+.nav{
+  z-index: 1;
+  display: flex;
+  background-image: url($bg_footer);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-around;
+  align-self: stretch;
+  align-items: center;
+  background-color: $color-primary;
+  padding: 1rem 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  & a {
+    color: $color-white-bg;
+    text-decoration: none;
+    &:hover{
+      color:$color-primary;
+      text-decoration:none;
+      cursor:pointer;
+    }
+  }
+
+}
+
+.post {
+  &__wrapper{
+    padding: 1rem 10rem;
+  }
+  &__thumbnail{
+
+  }
 }
