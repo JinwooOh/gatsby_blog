@@ -7,7 +7,6 @@ export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
-
     return (
       <Layout>
         <section>
@@ -21,6 +20,7 @@ export default class IndexPage extends React.Component {
                 <Link to={post.fields.slug}>
                   <div key={post.id} className="post__card">
                     <h3>{post.frontmatter.title}</h3>
+
                     <small> on {post.frontmatter.date}</small>
                   </div>
                 </Link>

@@ -1,0 +1,12 @@
+.tag{
+  &__wrapper{
+    padding: 1rem 10rem;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+

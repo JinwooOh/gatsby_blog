@@ -10,7 +10,7 @@ const Navbar = () => (
     <Link to="/about">
       <h3>About</h3>
     </Link>
-    <Link to="/about">
+    <Link to="/tags">
       <h3>Tags</h3>
     </Link>
   </nav>

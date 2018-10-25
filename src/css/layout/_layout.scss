@@ -20,13 +20,10 @@
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-.post {
-  &__wrapper{
-    padding: 1rem 10rem;
-  }
-  &__thumbnail{
-
+  a {
+    color: $color-white-bg;
+    &:hover{
+      color:$color-primary;
+    }
   }
 }
