@@ -10,9 +10,9 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <section>
-          <div className="post__wrapper">
-            <div>
-              <h1>Latest Posts</h1>
+          <div className="wrapper--post">
+            <div className="blog--title">
+              <h1>Blog</h1>
             </div>
 
             <div className="post">
