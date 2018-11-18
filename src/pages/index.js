@@ -21,7 +21,10 @@ export default class IndexPage extends React.Component {
                 <Link to={post.fields.slug}>
                   <div key={post.id} className="post__card">
                     <h3>{post.frontmatter.title}</h3>
-                    <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
+                    {post.frontmatter && (
+                      <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
+                    )}
+
                     <small> on {post.frontmatter.date}</small>
                   </div>
                 </Link>
